@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <li v-for="name in shows">{{name}}</li>
+    </ul>
+    <input type="text" v-model="newName"/>
+    <button @click="addName">Add name</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
